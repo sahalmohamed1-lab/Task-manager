@@ -30,9 +30,7 @@ def add_task(title, description, due_date):
 def mark_task_as_complete(index, tasks=tasks):
     if 0 <= index < len(tasks):
         tasks[index]["completed"] = True
-        print("Task marked as complete!")
-    else:
-        print("Invalid task index.")
+    print("Task marked as complete!")
     
 # Implement view_pending_tasks function
 def view_pending_tasks(tasks=tasks):
